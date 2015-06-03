@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
+
+{
+    IBOutlet UIImageView *imageView;
+    
+}
+
+-(IBAction)takePhoto;
+-(IBAction)openLibrary;
 
 @end
 

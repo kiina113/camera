@@ -14,6 +14,13 @@
 		3E857E261B1EA30500AFFFC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E857E251B1EA30500AFFFC1 /* Images.xcassets */; };
 		3E857E291B1EA30500AFFFC1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E857E271B1EA30500AFFFC1 /* LaunchScreen.xib */; };
 		3E857E351B1EA30600AFFFC1 /* CameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E857E341B1EA30600AFFFC1 /* CameraTests.m */; };
+		3E857E451B1EA33900AFFFC1 /* TechCamera_effect.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E857E3E1B1EA33900AFFFC1 /* TechCamera_effect.png */; };
+		3E857E461B1EA33900AFFFC1 /* TechCamera_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E857E3F1B1EA33900AFFFC1 /* TechCamera_facebook.png */; };
+		3E857E471B1EA33900AFFFC1 /* TechCamera_library.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E857E401B1EA33900AFFFC1 /* TechCamera_library.png */; };
+		3E857E481B1EA33900AFFFC1 /* TechCamera_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E857E411B1EA33900AFFFC1 /* TechCamera_line.png */; };
+		3E857E491B1EA33900AFFFC1 /* TechCamera_save.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E857E421B1EA33900AFFFC1 /* TechCamera_save.png */; };
+		3E857E4A1B1EA33900AFFFC1 /* TechCamera_take.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E857E431B1EA33900AFFFC1 /* TechCamera_take.png */; };
+		3E857E4B1B1EA33900AFFFC1 /* TechCamera_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E857E441B1EA33900AFFFC1 /* TechCamera_twitter.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,13 @@
 		3E857E2E1B1EA30600AFFFC1 /* CameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E857E331B1EA30600AFFFC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E857E341B1EA30600AFFFC1 /* CameraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraTests.m; sourceTree = "<group>"; };
+		3E857E3E1B1EA33900AFFFC1 /* TechCamera_effect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TechCamera_effect.png; sourceTree = "<group>"; };
+		3E857E3F1B1EA33900AFFFC1 /* TechCamera_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TechCamera_facebook.png; sourceTree = "<group>"; };
+		3E857E401B1EA33900AFFFC1 /* TechCamera_library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TechCamera_library.png; sourceTree = "<group>"; };
+		3E857E411B1EA33900AFFFC1 /* TechCamera_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TechCamera_line.png; sourceTree = "<group>"; };
+		3E857E421B1EA33900AFFFC1 /* TechCamera_save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TechCamera_save.png; sourceTree = "<group>"; };
+		3E857E431B1EA33900AFFFC1 /* TechCamera_take.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TechCamera_take.png; sourceTree = "<group>"; };
+		3E857E441B1EA33900AFFFC1 /* TechCamera_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TechCamera_twitter.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +95,7 @@
 		3E857E171B1EA30500AFFFC1 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				3E857E4C1B1EA34100AFFFC1 /* images */,
 				3E857E1C1B1EA30500AFFFC1 /* AppDelegate.h */,
 				3E857E1D1B1EA30500AFFFC1 /* AppDelegate.m */,
 				3E857E1F1B1EA30500AFFFC1 /* ViewController.h */,
@@ -117,6 +132,20 @@
 				3E857E331B1EA30600AFFFC1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3E857E4C1B1EA34100AFFFC1 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				3E857E3E1B1EA33900AFFFC1 /* TechCamera_effect.png */,
+				3E857E3F1B1EA33900AFFFC1 /* TechCamera_facebook.png */,
+				3E857E401B1EA33900AFFFC1 /* TechCamera_library.png */,
+				3E857E411B1EA33900AFFFC1 /* TechCamera_line.png */,
+				3E857E421B1EA33900AFFFC1 /* TechCamera_save.png */,
+				3E857E431B1EA33900AFFFC1 /* TechCamera_take.png */,
+				3E857E441B1EA33900AFFFC1 /* TechCamera_twitter.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +229,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E857E241B1EA30500AFFFC1 /* Main.storyboard in Resources */,
+				3E857E4A1B1EA33900AFFFC1 /* TechCamera_take.png in Resources */,
+				3E857E491B1EA33900AFFFC1 /* TechCamera_save.png in Resources */,
+				3E857E451B1EA33900AFFFC1 /* TechCamera_effect.png in Resources */,
+				3E857E4B1B1EA33900AFFFC1 /* TechCamera_twitter.png in Resources */,
+				3E857E481B1EA33900AFFFC1 /* TechCamera_line.png in Resources */,
 				3E857E291B1EA30500AFFFC1 /* LaunchScreen.xib in Resources */,
+				3E857E461B1EA33900AFFFC1 /* TechCamera_facebook.png in Resources */,
+				3E857E471B1EA33900AFFFC1 /* TechCamera_library.png in Resources */,
 				3E857E261B1EA30500AFFFC1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +379,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kinari Nishiyama (F3GGWE2JZG)";
 				INFOPLIST_FILE = Camera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +390,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kinari Nishiyama (F3GGWE2JZG)";
 				INFOPLIST_FILE = Camera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
