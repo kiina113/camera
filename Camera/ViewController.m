@@ -28,18 +28,18 @@
     //画像の取得先をカメラに設定
     UIImagePickerControllerSourceType sourceType = UIImagePickerControllerSourceTypeCamera;
     
-    //フォトライブラリーが使用可能かどうか
+    //カメラが使用可能かどうか
     if ([UIImagePickerController isSourceTypeAvailable:sourceType]){
         
         //UIImagePickerController を初期化・生成
-        //init意味調べる
+        //⭐️init意味調べる
         UIImagePickerController *picker = [[UIImagePickerController alloc]init];
         //画像の取得先
         picker.sourceType = sourceType;
         //デリゲートを設定
         picker.delegate = self;
         //フォトライブラリーをモーダルビューとして表示
-        //意味調べる
+        //⭐️意味調べる
         [self presentViewController:picker animated:YES completion:nil];
         
     }
@@ -48,12 +48,20 @@
 
 
 -(IBAction)openLibrary{
-    
+    //画像の取得先をライブラリーに設定
     UIImagePickerControllerSourceType souceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    //フォトライブラリーが使用可能かどうか
     if ([UIImagePickerController isSourceTypeAvailable:souceType]){
+        
+        //UIImagePickerの初期化・生成
         UIImagePickerController *picker =[[UIImagePickerController alloc]init];
+        //画像の取得先をフォトライブラリーに設定
         picker.sourceType = souceType;
+        //デリゲート設定
         picker.delegate = self;
+        //フォトライブラリーをモーダルビューとして表示
+        //⭐️モーダルビューの詳細調べる
         [self presentViewController:picker animated:YES completion:nil];
     }
     
@@ -77,12 +85,40 @@
 }
 }
 
-
+//画像保存時に呼ばれるメゾッド
 -(void)targetImage:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)context{
-
+     //保存失敗時
+    if(error){
+    // アラートの初期化
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
+                                                    message:@"保存できませんでした"
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+    
+                                          otherButtonTitles:nil];
+    //アラートの表示
+    [alert show];
         
+        //保存成功時
+     }else{
+         UIAlertView *alert =[[UIAlertView alloc] initWithTitle:@""
+                                                        message:@"保存が完了しました"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+         //アラートの表示
+         [alert show];
+         
+         
+     }
+
+    
+    
+    
 }
 
+
+//イメージピッカーのキャンセル時に呼ばれるメソッド
 
 -(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
     [[picker presentingViewController] dismissViewControllerAnimated:YES completion:nil];

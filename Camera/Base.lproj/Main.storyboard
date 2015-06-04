@@ -42,7 +42,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="imageView" destination="h2j-FG-1vY" id="GrY-q0-RoU"/>
+                        <outlet property="imageView" destination="h2j-FG-1vY" id="2B3-yj-mUS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
