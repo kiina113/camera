@@ -24,6 +24,7 @@
 }
 
 
+
 -(IBAction)takePhoto{
     //画像の取得先をカメラに設定
     UIImagePickerControllerSourceType sourceType = UIImagePickerControllerSourceTypeCamera;
@@ -126,7 +127,8 @@
 }
     
     
-    
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
